@@ -128,10 +128,10 @@ export default {
                 z-index: 2;
                 padding: 10px;
                 border-radius: 5px;
-                border-bottom: 3px solid #f9aa01;
+                border-bottom: 2px solid #f9aa01;
                 font-size: .8em;
-                background-color: white;
-                color: black;
+                background-color: #170e1f;
+                color: white;
                 box-shadow: 5px 8px 10px 0px rgb(0, 0, 0);
 
                 ul {

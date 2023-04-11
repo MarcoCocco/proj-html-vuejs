@@ -48,6 +48,10 @@ export default {
             margin-left: 20px;
             padding: 0 25px;
             background-color: #f9aa01;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 5px;
             color: black;
             font-size: 2em;
         }
@@ -70,12 +74,12 @@ export default {
                 font-size: 1.2em;
                 font-weight: bold;
                 border-bottom: 3px solid #f9aa01;
-                transition: all .2s;
+                transition: all .6s;
 
                 &:hover {
                     cursor: pointer;
-                    transform: scale(1.1);
-                    box-shadow: 0px 4px 8px 0px rgb(0, 0, 0);
+                    background-color: #f9aa01;
+                    border-bottom: 3px solid white;
                 }
             }
         } 
