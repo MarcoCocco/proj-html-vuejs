@@ -128,15 +128,16 @@ export default {
                 z-index: 2;
                 padding: 10px;
                 border-radius: 5px;
+                border-bottom: 3px solid #f9aa01;
                 font-size: .8em;
                 background-color: white;
                 color: black;
-                box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.8);
+                box-shadow: 5px 8px 10px 0px rgb(0, 0, 0);
 
                 ul {
                     display: flex;
                     flex-direction: column;
-                    gap: 8px;
+                    
 
                     li {
 
@@ -240,6 +241,7 @@ export default {
                         border-bottom: 2px solid #f9aa01;
                         background-color: white;
                         color: black;
+                        box-shadow: 0px 4px 8px 0px rgb(0, 0, 0);
                     }
                 }
             }
