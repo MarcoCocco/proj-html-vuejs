@@ -70,10 +70,12 @@ export default {
                 font-size: 1.2em;
                 font-weight: bold;
                 border-bottom: 3px solid #f9aa01;
+                transition: all .2s;
 
                 &:hover {
                     cursor: pointer;
                     transform: scale(1.1);
+                    box-shadow: 0px 4px 8px 0px rgb(0, 0, 0);
                 }
             }
         } 
