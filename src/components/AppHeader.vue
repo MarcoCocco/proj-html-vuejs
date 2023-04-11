@@ -1,5 +1,5 @@
 <script>
-import {store} from './store.js'
+import { store } from '../store.js'
 
 export default {
     data() {
@@ -12,6 +12,8 @@ export default {
 
 </script>
 
-<template></template>
+<template>
+    <h1>Ciao</h1>
+</template>
 
 <style lang="scss" scoped></style>
