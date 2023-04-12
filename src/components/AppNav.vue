@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-    <div class="header-container">
+    <div class="nav-container">
         <div class="contact-info container-centered">
             <div class="left">
                 <span class="whishlist">Wishlist(0)</span>
@@ -40,19 +40,19 @@ export default {
             </div>
         </div>
         <hr>
-        <!-- HEADER -->
-        <header class="container-centered">
-            <div class="header-left">
+        <!-- NAVBAR -->
+        <nav class="container-centered">
+            <div class="nav-left">
                 <div class="logo">
                     <img src="/images/logo.png" alt="GAMEHOAX Logo">
                 </div>
             </div>
-            <div class="header-center">
+            <div class="nav-center">
                 <ul>
                     <li v-for="link in store.navLinks"> <strong><a :href="link.url">{{ link.name }}</a></strong></li>
                 </ul>
             </div>
-            <div class="header-right">
+            <div class="nav-right">
                 <div class="search">
                     <div class="search-bar">
                         <!-- search-bar a comparsa al click dell'icona della lente-->
@@ -71,7 +71,7 @@ export default {
                 </div>
 
             </div>
-        </header>
+        </nav>
     </div>
 </template>
 
@@ -108,7 +108,7 @@ export default {
 }
 /* ------------------------------- */
 
-.header-container {
+.nav-container {
     background-color: #1d1427;
 
     .contact-info {
@@ -186,17 +186,17 @@ export default {
         background-color: rgba(255, 255, 255, 0.5);
     }
 
-    header {
+    nav {
         padding: 20px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        .header-left .logo {
+        .nav-left .logo {
             display: flex;
         }
 
-        .header-center {
+        .nav-center {
             ul {
                 display: flex;
                 gap: 50px;
@@ -211,7 +211,7 @@ export default {
             }
         }
 
-        .header-right {
+        .nav-right {
             display: flex;
             align-items: center;
             gap: 30px;

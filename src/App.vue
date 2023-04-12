@@ -1,5 +1,5 @@
 <script>
-import AppHeader from './components/AppHeader.vue';
+import AppNav from './components/AppNav.vue';
 import AppHero from './components/AppHero.vue';
 import { store } from './store.js'
 
@@ -10,13 +10,13 @@ export default {
             store,
         };
     },
-    components: { AppHeader, AppHero }
+    components: { AppNav, AppHero }
 }
 
 </script>
 
 <template>
-    <AppHeader></AppHeader>
+    <AppNav></AppNav>
     <AppHero></AppHero>
 </template>
 
