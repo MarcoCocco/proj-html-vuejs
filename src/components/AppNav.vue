@@ -2,6 +2,7 @@
 import { store } from '../store.js'
 
 export default {
+    name: 'AppNav',
     data() {
         return {
             store,
@@ -22,7 +23,7 @@ export default {
                 <hr>
                 <div class="dropdown-menu">
                     <span @click="active = !active" class="help-menu">Need Help?
-                    <i class="fa-solid fa-chevron-down"></i></span>
+                        <i class="fa-solid fa-chevron-down"></i></span>
                     <!-- dropdown menu-->
                     <Transition name="slide-fade-down">
                         <div class="menu-active" v-if="active">
@@ -90,6 +91,7 @@ export default {
     transform: translateX(20px);
     opacity: 0;
 }
+
 /* ------------------------- */
 
 /* Animazione dropdown-menu */
@@ -106,10 +108,15 @@ export default {
     transform: translateY(-10px);
     opacity: 0;
 }
+
 /* ------------------------------- */
 
 .nav-container {
+    z-index: 2;
+    width: 100%;
+    position: fixed;
     background-color: #1d1427;
+    box-shadow: 0px 10px 12px 0px rgba(0, 0, 0, 0.8);
 
     .contact-info {
         padding: 10px 0;
@@ -137,7 +144,7 @@ export default {
                 ul {
                     display: flex;
                     flex-direction: column;
-                    
+
 
                     li {
 

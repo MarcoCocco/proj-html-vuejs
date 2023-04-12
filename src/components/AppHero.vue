@@ -2,6 +2,7 @@
 import { store } from '../store.js'
 
 export default {
+    name: 'AppHero',
     data() {
         return {
 
@@ -27,13 +28,12 @@ export default {
 
 <style lang="scss" scoped>
 .hero-container {
+    height: 100vh;
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: calc(100vh - 118px);
     background-image: url(/images/jumbo.png);
     background-size: cover;
-    background-position: center;
+    background-position: top;
 
     .hero-title {
         width: 100%;
@@ -58,7 +58,7 @@ export default {
 
         h1 {
             width: 50%;
-            font-size: 5em;
+            font-size: 4em;
         }
 
         .shop-button {
