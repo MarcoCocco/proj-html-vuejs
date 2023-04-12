@@ -190,7 +190,7 @@ export default {
     hr {
         border: none;
         height: 1px;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: #f9aa018a;
     }
 
     nav {
@@ -211,7 +211,6 @@ export default {
                 li a {
 
                     &:hover {
-
                         color: #f9aa01;
                     }
                 }

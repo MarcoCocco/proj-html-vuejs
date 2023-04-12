@@ -43,3 +43,25 @@ a {
   text-decoration: none;
   color: white;
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #170e1f #1d1427;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #170e1f;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #1d1427;
+    border-radius: 10px;
+    border: 1px solid #f9aa0162;
+  }
