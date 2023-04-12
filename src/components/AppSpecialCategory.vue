@@ -77,6 +77,7 @@ export default {
 
                 span a{
                     font-size: .8em;
+                    color: rgba(255, 255, 255, 0.555);
 
                     &:hover {
                         text-decoration: underline;

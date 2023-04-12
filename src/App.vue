@@ -4,6 +4,7 @@ import AppNav from './components/AppNav.vue';
 import AppHero from './components/AppHero.vue';
 import AppShowcase from './components/AppShowcase.vue';
 import AppSpecialCategory from './components/AppSpecialCategory.vue';
+import AppProducts from './components/AppProducts.vue';
 
 
 export default {
@@ -12,7 +13,7 @@ export default {
             store,
         };
     },
-    components: { AppNav, AppHero, AppShowcase, AppSpecialCategory }
+    components: { AppNav, AppHero, AppShowcase, AppSpecialCategory, AppProducts }
 }
 
 </script>
@@ -22,6 +23,7 @@ export default {
     <AppHero></AppHero>
     <AppShowcase></AppShowcase>
     <AppSpecialCategory></AppSpecialCategory>
+    <AppProducts></AppProducts>
 </template>
 
 <style lang="scss"></style>

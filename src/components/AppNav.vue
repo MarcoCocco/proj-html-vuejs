@@ -9,38 +9,54 @@ export default {
 
             searchBarVisible: false,
             active: false,
+            showContact: true,
         }
     },
+
+    //Eventi che gestiscono il momento in cui parte della navbar deve scomparire
+    mounted() {
+        window.addEventListener('scroll', this.handleScroll);
+    },
+   
+    methods: {
+        handleScroll() {
+            this.showContact = window.pageYOffset < 100;
+        }
+    }
 
 }
 </script>
 
 <template>
     <div class="nav-container">
-        <div class="contact-info container-centered">
-            <div class="left">
-                <span class="whishlist">Wishlist(0)</span>
-                <hr>
-                <div class="dropdown-menu">
-                    <span @click="active = !active" class="help-menu">Need Help?
-                        <i class="fa-solid fa-chevron-down"></i></span>
-                    <!-- dropdown menu-->
-                    <Transition name="slide-fade-down">
-                        <div class="menu-active" v-if="active">
-                            <ul>
-                                <li><strong>Contact Us</strong></li>
-                                <li><strong>Live Chat</strong></li>
-                                <li><strong>F.A.Q.</strong></li>
-                            </ul>
+        <Transition name="slide">
+            <div v-if="showContact">
+                <div class="contact-info container-centered">
+                    <div class="left">
+                        <span class="whishlist">Wishlist(0)</span>
+                        <hr>
+                        <div class="dropdown-menu">
+                            <span @click="active = !active" class="help-menu">Need Help?
+                                <i class="fa-solid fa-chevron-down"></i></span>
+                            <!-- dropdown menu -->
+                            <Transition name="slide-fade-down">
+                                <div class="menu-active" v-if="active">
+                                    <ul>
+                                        <li><strong>Contact Us</strong></li>
+                                        <li><strong>Live Chat</strong></li>
+                                        <li><strong>F.A.Q.</strong></li>
+                                    </ul>
+                                </div>
+                            </Transition>
                         </div>
-                    </Transition>
+                    </div>
+                    <div class="right">
+                        <span>Call 24/7.800-8754-987</span>
+                    </div>
                 </div>
+                <hr>
             </div>
-            <div class="right">
-                <span>Call 24/7.800-8754-987</span>
-            </div>
-        </div>
-        <hr>
+        </Transition>
         <!-- NAVBAR -->
         <nav class="container-centered">
             <div class="nav-left">
@@ -56,7 +72,7 @@ export default {
             <div class="nav-right">
                 <div class="search">
                     <div class="search-bar">
-                        <!-- search-bar a comparsa al click dell'icona della lente-->
+                        <!-- search-bar a comparsa al click dell'icona della lente -->
                         <Transition name="slide-fade">
                             <input v-if="searchBarVisible" type="text" placeholder="Cerca nel nostro sito">
                         </Transition>
@@ -77,6 +93,19 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+
+/* Animazione scomparsa parte alta Navbar allo scorrimento */
+.slide-enter-active,
+.slide-leave-active {
+    transition: all 1s ease;
+}
+
+.slide-enter,
+.slide-leave-to {
+    transform: translateY(-100%);
+}
+/* ------------------------- */
+
 /* Animazione search-bar */
 .slide-fade-enter-active {
     transition: all 0.6s ease-out;
