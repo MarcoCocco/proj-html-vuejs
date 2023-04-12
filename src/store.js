@@ -57,4 +57,19 @@ export const store = reactive({
         
     ],
 
+    categories: [
+        {
+            name: 'Battlefield 3',
+            image: '/images/category-image-02-446x550_t.jpg',
+        },
+        {
+            name: 'PUBG: Battlegrounds',
+            image: '/images/category-image-01-446x550_t.jpg',
+        },
+        {
+            name: 'Jump Force',
+            image: '/images/category-image-03-446x550_t.jpg',
+        },
+    ]
+
 });

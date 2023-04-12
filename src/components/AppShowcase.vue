@@ -109,7 +109,7 @@ export default {
     align-items: center;
 
     .animated-gradient {
-        z-index: 2;
+        z-index: 1;
         position: absolute;
         top: 0;
         left: 0;
@@ -117,6 +117,7 @@ export default {
         height: 100%;
 
         &:hover {
+            cursor: pointer;
             animation: animateBg 1s linear forwards 1;
             background-image: linear-gradient(300deg, #00000000, #00000000, #00000000, #00000000, #ffffff28, #ffffff71, #ffffff33, #00000000, #00000000, #ffffff00, #00000000);
             background-size: 400% 100%;

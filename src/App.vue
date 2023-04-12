@@ -1,8 +1,9 @@
 <script>
+import { store } from './store.js'
 import AppNav from './components/AppNav.vue';
 import AppHero from './components/AppHero.vue';
-import { store } from './store.js'
 import AppShowcase from './components/AppShowcase.vue';
+import AppSpecialCategory from './components/AppSpecialCategory.vue';
 
 
 export default {
@@ -11,7 +12,7 @@ export default {
             store,
         };
     },
-    components: { AppNav, AppHero, AppShowcase }
+    components: { AppNav, AppHero, AppShowcase, AppSpecialCategory }
 }
 
 </script>
@@ -20,6 +21,7 @@ export default {
     <AppNav></AppNav>
     <AppHero></AppHero>
     <AppShowcase></AppShowcase>
+    <AppSpecialCategory></AppSpecialCategory>
 </template>
 
 <style lang="scss"></style>
