@@ -39,6 +39,7 @@ export default {
 
     <div class="showcase container-centered">
         <div class="most-popular">
+            <div class="animated-gradient"></div>
             <img src="/images/hogwarts-legacy.png" alt="">
             <div class="most-popular-title">
                 <h2>Most Popular</h2>
@@ -47,7 +48,7 @@ export default {
         </div>
         <div class="latest">
             <img src="/images/resident-evil-4-remake.png" alt="">
-            <div class="gradient"></div>
+            <div class="animated-gradient"></div>
             <div class="latest-title">
                 <h2>Latest Game</h2>
                 <h1>Resident Evil 4 Remake</h1>
@@ -107,18 +108,35 @@ export default {
     justify-content: space-between;
     align-items: center;
 
-    .gradient {
+    .animated-gradient {
+        z-index: 2;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgb(0, 0, 0);
-        background: linear-gradient(300deg, rgba(0, 0, 0, 0.5) 35%, rgba(255, 255, 255, 0.1) 35.2%, rgba(0, 0, 0, 0) 100%);
+
+        &:hover {
+            animation: animateBg 1s linear forwards 1;
+            background-image: linear-gradient(300deg, #00000000, #00000000, #00000000, #00000000, #ffffff28, #ffffff71, #ffffff33, #00000000, #00000000, #ffffff00, #00000000);
+            background-size: 400% 100%;
+
+            @keyframes animateBg {
+                0% {
+                    background-position: 100% 0%;
+                }
+
+                100% {
+                    background-position: 0% 0%;
+                }
+            }
+
+        }
     }
 
     .most-popular {
         position: relative;
+        box-shadow: 0px 10px 12px 0px rgba(0, 0, 0, 0.8);
 
         img {
             display: block;
@@ -154,6 +172,7 @@ export default {
 
     .latest {
         position: relative;
+        box-shadow: 0px 10px 12px 0px rgba(0, 0, 0, 0.8);
 
         img {
             display: block;
