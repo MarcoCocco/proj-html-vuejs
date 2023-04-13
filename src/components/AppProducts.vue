@@ -23,7 +23,36 @@ export default {
 
             store,
             showIcons: false,
+            currentCard: 0,
+            cardsView: 4,
         };
+
+    },
+
+    computed: {
+
+        visibleCards() {
+            let start = this.currentCard * this.cardsView;
+            let end = start + this.cardsView;
+            return this.store.productList.slice(start, end);
+        },
+
+    },
+
+    methods: {
+
+        nextSlide() {
+            if ( this.currentCard < Math.ceil(this.store.productList.length / this.cardsView) - 1 ) {
+                this.currentCard++;
+            }
+        },
+
+        prevSlide() {
+            if (this.currentCard > 0) {
+                this.currentCard--;
+            }
+        },
+
     },
 
     components: { AppProductCard }
@@ -43,14 +72,17 @@ export default {
             <div class="new"><strong>New Arrival</strong></div>
             <div class="best"><strong>Best Sellers</strong></div>
         </div>
-        <div class="products-card-list">
-            <div class="prev-slide">
+        <div class="slide-button">
+            <div class="prev-slide" @click="prevSlide">
                 <img src="/images/icons/left-arrow.png" alt="">
             </div>
-            <div class="next-slide">
+            <div class="next-slide" @click="nextSlide">
                 <img src="/images/icons/right-arrow.png" alt="">
             </div>
-            <AppProductCard v-for="card in store.productList" :card="card"></AppProductCard>
+
+            <div class="products-card-list">
+                <AppProductCard v-for="card in visibleCards" :card="card"></AppProductCard>
+            </div>
         </div>
     </div>
 </template>
@@ -98,25 +130,43 @@ export default {
 
     }
 
-    .products-card-list {
+    .slide-button {
         position: relative;
-        display: flex;
-        gap: 20px;
-        overflow-x: hidden;
-        padding-bottom: 2em;
 
         .prev-slide {
+            z-index: 1;
             position: absolute;
             top: 50%;
             left: 5px;
             transform: translateY(-50%);
+
+            &:hover {
+                content: url(/images/icons/left-arrow-hover.png);
+                cursor: pointer;
+            }
         }
 
         .next-slide {
+            z-index: 1;
             position: absolute;
             top: 50%;
             right: 5px;
             transform: translateY(-50%);
+
+            &:hover {
+                content: url(/images/icons/right-arrow-hover.png);
+                cursor: pointer;
+            }
+        }
+
+        .products-card-list {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            padding-bottom: 2em;
         }
     }
 }

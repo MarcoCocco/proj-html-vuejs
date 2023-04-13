@@ -133,6 +133,42 @@ export const store = reactive({
             price: '$200.00',
             vote: 5,
         },
+        {
+            imagePath: '/images/products/11-300x300.jpg',
+            name: 'Titolo Prodotto 11',
+            price: '$349.99',
+            vote: 2,
+        },
+        {
+            imagePath: '/images/products/12-300x300.jpg',
+            name: 'Titolo Prodotto 12',
+            price: '$440.00',
+            vote: 3,
+        },
+        {
+            imagePath: '/images/products/13-300x300.jpg',
+            name: 'Titolo Prodotto 13',
+            price: '$149.99',
+            vote: 1,
+        },
+        {
+            imagePath: '/images/products/14-300x300.jpg',
+            name: 'Titolo Prodotto 14',
+            price: '$366.00',
+            vote: 5,
+        },
+        {
+            imagePath: '/images/products/15-300x300.jpg',
+            name: 'Titolo Prodotto 15',
+            price: '$349.99',
+            vote: 2,
+        },
+        {
+            imagePath: '/images/products/16-300x300.jpg',
+            name: 'Titolo Prodotto 16',
+            price: '$123.00',
+            vote: 3,
+        },
         
     ]
 

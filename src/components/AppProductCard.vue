@@ -69,19 +69,15 @@ export default {
 /* -------------------------------- */
 
 .card {
-    width: calc(100% / 4);
-    box-shadow: 0px 10px 12px 0px rgba(0, 0, 0, 0.8);
 
     img {
         display: block;
     }
-
     .card-info {
         display: flex;
         flex-direction: column;
         gap: 10px;
         position: relative;
-        width: 300px;
         padding: 10px;
         background-color: #170e1f;
 
