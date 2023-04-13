@@ -56,9 +56,8 @@ export default {
                 <p>{{ card.name }}</p>
             </div>
             <div class="price">
-                <span class="original-price" v-if="!isSaled">{{ card.price }}</span>
-                <span class="line-through" v-else>{{ card.price }}</span>
-                <span class="saled-price" v-if="isSaled">{{ card.saledPrice }}</span>
+                <span class="original-price" :class="{ through: card.sale === true }">{{ card.price }}</span>
+                <span class="saled-price" v-if="isSaled"> {{ card.saledPrice }}</span>
             </div>
             <transition name="slide-fade">
                 <div class="icons" v-if="showIcons">
@@ -112,10 +111,11 @@ export default {
 
         .price {
 
-            .line-through {
+            .through {
                 margin-right: 5px;
                 font-size: .8em;
                 text-decoration: line-through;
+                color: rgba(255, 255, 255, 0.425);
             }
 
             .saled-price {
