@@ -22,7 +22,15 @@ export default {
 
             store,
             showIcons: false,
+
         };
+    },
+
+    methods: {
+
+        isSaled() {
+            return this.card.sale;
+        }
     },
 
     props: {
@@ -35,6 +43,9 @@ export default {
 
 <template>
     <div class="card">
+        <div class="sale" v-show="isSaled()">
+            <p><strong>{{ card.saleAmount }}</strong></p>
+        </div>
         <img :src="card.imagePath" alt="">
         <div @mouseover="showIcons = true" @mouseleave="showIcons = false" class="card-info">
             <div class="vote">
@@ -45,7 +56,9 @@ export default {
                 <p>{{ card.name }}</p>
             </div>
             <div class="price">
-                <p>{{ card.price }}</p>
+                <span class="original-price" v-if="!isSaled">{{ card.price }}</span>
+                <span class="line-through" v-else>{{ card.price }}</span>
+                <span class="saled-price" v-if="isSaled">{{ card.saledPrice }}</span>
             </div>
             <transition name="slide-fade">
                 <div class="icons" v-if="showIcons">
@@ -69,10 +82,26 @@ export default {
 /* -------------------------------- */
 
 .card {
+    position: relative;
+
+    .sale {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 5px;
+        font-size: .8em;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 3px;
+        background-color: #f9aa01;
+        color: black;
+    }
 
     img {
         display: block;
     }
+
     .card-info {
         display: flex;
         flex-direction: column;
@@ -80,6 +109,20 @@ export default {
         position: relative;
         padding: 10px;
         background-color: #170e1f;
+
+        .price {
+
+            .line-through {
+                margin-right: 5px;
+                font-size: .8em;
+                text-decoration: line-through;
+            }
+
+            .saled-price {
+                color: #f9aa01;
+            }
+
+        }
 
         .vote {
             font-size: .8em;
@@ -103,11 +146,18 @@ export default {
                 border: 1px solid rgba(255, 255, 255, 0.281);
                 border-bottom: none;
                 border-left: none;
+
+                &:hover {
+                    cursor: pointer;
+                    color: #f9aa01;
+                }
             }
 
             span:last-child {
                 border-right: none;
             }
+
+
         }
     }
 }
