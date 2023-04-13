@@ -96,19 +96,6 @@ export default {
 <style lang="scss" scoped>
 .product {
 
-    .title-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .row {
-            margin-top: 10px;
-            width: 30px;
-            height: 2px;
-            background-color: #f9aa01;
-        }
-    }
-
     .product-categories {
         padding: 2em;
         display: flex;

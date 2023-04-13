@@ -241,6 +241,68 @@ export const store = reactive({
             comment: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati similique modi blanditiis distinctio Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati similique modi blanditiis distinctio Lorem ipsum dolor sit',
 
         },
-    ]
+    ],
 
+    blogCardList: [
+        {
+            image: '/images/blog_images/01.jpg',
+            date: 'Jan 18, 2021',
+            comment: 0,
+            title: "Titolo dell'articolo 1",
+        },
+        {
+            image: '/images/blog_images/02.jpg',
+            date: 'Jan 17, 2021',
+            comment: 23,
+            title: "Titolo dell'articolo 2",
+        },
+        {
+            image: '/images/blog_images/03.jpg',
+            date: 'Jan 16, 2021',
+            comment: 11,
+            title: "Titolo dell'articolo 3",
+        },
+        {
+            image: '/images/blog_images/04.jpg',
+            date: 'Jan 15, 2021',
+            comment: 6,
+            title: "Titolo dell'articolo 4",
+        },
+        {
+            image: '/images/blog_images/05.jpg',
+            date: 'Jan 14, 2021',
+            comment: 45,
+            title: "Titolo dell'articolo 5",
+        },
+        {
+            image: '/images/blog_images/06.jpg',
+            date: 'Jan 13, 2021',
+            comment: 34,
+            title: "Titolo dell'articolo 6",
+        },
+        {
+            image: '/images/blog_images/07.jpg',
+            date: 'Jan 12, 2021',
+            comment: 21,
+            title: "Titolo dell'articolo 7",
+        },
+        {
+            image: '/images/blog_images/08.jpg',
+            date: 'Jan 11, 2021',
+            comment: 4,
+            title: "Titolo dell'articolo 8",
+        },
+        {
+            image: '/images/blog_images/09.jpg',
+            date: 'Jan 10, 2021',
+            comment: 14,
+            title: "Titolo dell'articolo 9",
+        },
+        {
+            image: '/images/blog_images/10.jpg',
+            date: 'Jan 9, 2021',
+            comment: 1,
+            title: "Titolo dell'articolo 10",
+        },
+    ]
 });

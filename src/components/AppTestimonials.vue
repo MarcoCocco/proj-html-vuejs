@@ -59,6 +59,7 @@ export default {
 
 <style lang="scss" scoped>
 .background {
+    margin-bottom: 2em;
     padding: 8em 7em;
     display: flex;
     flex-direction: column;
@@ -109,6 +110,7 @@ export default {
 
     .dots {
         display: flex;
+        gap: 5px;
         justify-content: center;
 
         .dot {
@@ -118,9 +120,14 @@ export default {
             background-color: white;
             border-radius: 50%;
             display: inline-block;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
 
         .dot.active {
+            transform: scale(1.3);
             background-color: #f9aa01;
         }
 

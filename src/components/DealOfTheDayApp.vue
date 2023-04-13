@@ -72,20 +72,6 @@ export default {
 <style lang="scss" scoped>
 .product {
 
-    .title-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .row {
-            margin-top: 10px;
-            margin-bottom: 20px;
-            width: 30px;
-            height: 2px;
-            background-color: #f9aa01;
-        }
-    }
-
     .slide-button {
         position: relative;
 
@@ -116,6 +102,7 @@ export default {
         }
 
         .products-card-list {
+            padding-top: 20px;
             position: relative;
             display: flex;
             justify-content: center;

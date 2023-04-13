@@ -32,20 +32,6 @@ export default {
 <style lang="scss" scoped>
 .category {
 
-    .title-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-
-        .row {
-            margin-top: 10px;
-            width: 30px;
-            height: 2px;
-            background-color: #f9aa01;
-        }
-    }
-
     .card-list {
         padding: 2em 0;
         display: flex;

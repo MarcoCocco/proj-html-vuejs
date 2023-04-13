@@ -7,6 +7,7 @@ import AppSpecialCategory from './components/AppSpecialCategory.vue';
 import AppProducts from './components/AppProducts.vue';
 import DealOfTheDayApp from './components/DealOfTheDayApp.vue';
 import AppTestimonials from './components/AppTestimonials.vue';
+import AppGameBlog from './components/AppGameBlog.vue';
 
 
 export default {
@@ -15,7 +16,7 @@ export default {
             store,
         };
     },
-    components: { AppNav, AppHero, AppShowcase, AppSpecialCategory, AppProducts, DealOfTheDayApp, AppTestimonials }
+    components: { AppNav, AppHero, AppShowcase, AppSpecialCategory, AppProducts, DealOfTheDayApp, AppTestimonials, AppGameBlog }
 }
 
 </script>
@@ -28,6 +29,7 @@ export default {
     <AppProducts></AppProducts>
     <DealOfTheDayApp></DealOfTheDayApp>
     <AppTestimonials></AppTestimonials>
+    <AppGameBlog></AppGameBlog>
 </template>
 
 <style lang="scss"></style>
