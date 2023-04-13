@@ -54,7 +54,7 @@ export const store = reactive({
             icon: '/images/icons/service4.png',
             iconHover: '/images/icons/service4-hover.png'
         }
-        
+
     ],
 
     categories: [
@@ -216,7 +216,31 @@ export const store = reactive({
             sale: true,
             saleAmount: '20%',
         },
-        
+
+    ],
+
+    users: [
+        {
+            image: '/images/users/t2-1-100x100_left.jpg',
+            name: 'Tizius Caius',
+            job: 'Dentist',
+            comment: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati similique modi blanditiis distinctio Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati similique modi blanditiis distinctio Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati similique modi blanditiis distinctio',
+
+        },
+        {
+            image: '/images/users/t4-1-100x100_left.jpg',
+            name: 'Sempronius Lorem',
+            job: 'Logopedist',
+            comment: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati similique modi blanditiis distinctio Lorem ipsum dolor sit, amet consectetur adipisicing elit. ',
+
+        },
+        {
+            image: '/images/users/t5-1-100x100_left.jpg',
+            name: 'Ipsia Loretta',
+            job: 'Lift of Hypothesis',
+            comment: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati similique modi blanditiis distinctio Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati similique modi blanditiis distinctio Lorem ipsum dolor sit',
+
+        },
     ]
 
 });
