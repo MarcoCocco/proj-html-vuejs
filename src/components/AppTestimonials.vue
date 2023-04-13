@@ -36,6 +36,9 @@ export default {
 
         <div v-for="user in visibleUsers" class="testimonials container-centered">
             <div class="user-image">
+                <div id="quote">
+                    <img src="/images/icons/quote.png" alt="">
+                </div>
                 <img :src="user.image" alt="">
             </div>
             <div class="user-name">
@@ -74,9 +77,22 @@ export default {
         gap: 20px;
         text-align: center;
 
+        
         .user-image {
+            position: relative;
+            
+            #quote {
+                z-index: 1;
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 5px 10px;
+                background-color: #f9aa01;
+                border-radius: 50%;
+            }
 
-            img {
+
+            > img {
                 border: 2px solid #f9aa01;
                 border-radius: 50%;
             }

@@ -231,7 +231,7 @@ export const store = reactive({
             image: '/images/users/t4-1-100x100_left.jpg',
             name: 'Sempronius Lorem',
             job: 'Logopedist',
-            comment: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati similique modi blanditiis distinctio Lorem ipsum dolor sit, amet consectetur adipisicing elit. ',
+            comment: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati similique modi blanditiis distinctio Lorem ipsum dolor sit, amet consectetur adipisicing elit. amet consectetur adipisicing elit. Obcaecati similique modi blanditiis distinctio ',
 
         },
         {
