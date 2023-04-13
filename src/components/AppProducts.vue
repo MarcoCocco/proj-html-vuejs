@@ -6,22 +6,9 @@ export default {
     name: 'AppProduct',
     data() {
         return {
-            icons: [
-                {
-                    iconPath: '<i class="fa-solid fa-bag-shopping"></i>'
-                },
-                {
-                    iconPath: '<i class="fa-solid fa-heart"></i>'
-                },
-                {
-                    iconPath: '<i class="fa-solid fa-maximize"></i>'
-                },
-                {
-                    iconPath: '<i class="fa-solid fa-eye"></i>'
-                },
-            ],
-
+           
             store,
+            
             showIcons: false,
             currentCard: 0,
             cardsView: 4,
