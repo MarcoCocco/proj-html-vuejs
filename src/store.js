@@ -70,6 +70,70 @@ export const store = reactive({
             name: 'Jump Force',
             image: '/images/category-image-03-446x550_t.jpg',
         },
+    ],
+
+    productList: [
+        {
+            imagePath: '/images/products/01-300x300.jpg',
+            name: 'Titolo Prodotto 1',
+            price: '$100.00',
+            vote: 3,
+        },
+        {
+            imagePath: '/images/products/02-300x300.jpg',
+            name: 'Titolo Prodotto 2',
+            price: '$80.00',
+            vote: 4,
+        },
+        {
+            imagePath: '/images/products/03-300x300.jpg',
+            name: 'Titolo Prodotto 3',
+            price: '$150.00',
+            vote: 5,
+        },
+        {
+            imagePath: '/images/products/04-300x300.jpg',
+            name: 'Titolo Prodotto 4',
+            price: '$49.90',
+            vote: 3,
+        },
+        {
+            imagePath: '/images/products/05-300x300.jpg',
+            name: 'Titolo Prodotto 5',
+            price: '$243.00',
+            vote: 1,
+        },
+        {
+            imagePath: '/images/products/06-300x300.jpg',
+            name: 'Titolo Prodotto 6',
+            price: '$59.99',
+            vote: 2,
+        },
+        {
+            imagePath: '/images/products/07-300x300.jpg',
+            name: 'Titolo Prodotto 7',
+            price: '$23.99',
+            vote: 5,
+        },
+        {
+            imagePath: '/images/products/08-300x300.jpg',
+            name: 'Titolo Prodotto 8',
+            price: '$110.00',
+            vote: 4,
+        },
+        {
+            imagePath: '/images/products/09-300x300.jpg',
+            name: 'Titolo Prodotto 9',
+            price: '$149.99',
+            vote: 1,
+        },
+        {
+            imagePath: '/images/products/10-300x300.jpg',
+            name: 'Titolo Prodotto 10',
+            price: '$200.00',
+            vote: 5,
+        },
+        
     ]
 
 });
