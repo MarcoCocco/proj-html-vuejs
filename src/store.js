@@ -304,5 +304,82 @@ export const store = reactive({
             comment: 1,
             title: "Titolo dell'articolo 10",
         },
+    ],
+
+    sponsors: [
+        {
+            image: '/images/brands/brand-01.png'
+        },
+        {
+            image: '/images/brands/brand-02.png'
+        },
+        {
+            image: '/images/brands/brand-03.png'
+        },
+        {
+            image: '/images/brands/brand-04.png'
+        },
+        {
+            image: '/images/brands/brand-05.png'
+        },
+    ],
+
+    footerLinks: [
+        {
+            title: 'Information',
+            links: [
+                'Bookmark',
+                'Features',
+                'Sitemap',
+                'Lists',
+                'Contact US'
+            ]
+        },
+        {
+            title: 'Extras',
+            links: [
+                'Delivery',
+                'Cart',
+                'Terms conditions',
+                'My account',
+                'About us'
+            ]
+        },
+    ],
+
+    payments: [
+        {
+            image: '/images/payments/$.png'
+        },
+        {
+            image: '/images/payments/american-express.png'
+        },
+        {
+            image: '/images/payments/bitcoin.png'
+        },
+        {
+            image: '/images/payments/discover.png'
+        },
+        {
+            image: '/images/payments/DK.png'
+        },
+        {
+            image: '/images/payments/g.png'
+        },
+        {
+            image: '/images/payments/maestro.png'
+        },
+        {
+            image: '/images/payments/master-card.png'
+        },
+        {
+            image: '/images/payments/paypal.png'
+        },
+        {
+            image: '/images/payments/visa.png'
+        },
+        {
+            image: '/images/payments/W.png'
+        },
     ]
 });

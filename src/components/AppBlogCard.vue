@@ -41,6 +41,7 @@ export default {
         ;
 
         img {
+            max-width: 400px;
             width: 100%;
         }
     }
@@ -52,9 +53,23 @@ export default {
         p {
             font-size: .7em;
 
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
             i {
                 color: #f9aa01;
             }
+        }
+
+    }
+
+    .blog-title {
+
+        &:hover {
+            cursor: pointer;
+            color: #f9aa01;
         }
     }
 }

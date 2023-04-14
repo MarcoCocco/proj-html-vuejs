@@ -8,6 +8,8 @@ import AppProducts from './components/AppProducts.vue';
 import DealOfTheDayApp from './components/DealOfTheDayApp.vue';
 import AppTestimonials from './components/AppTestimonials.vue';
 import AppGameBlog from './components/AppGameBlog.vue';
+import AppSponsor from './components/AppSponsor.vue';
+import AppFooter from './components/AppFooter.vue';
 
 
 export default {
@@ -16,7 +18,8 @@ export default {
             store,
         };
     },
-    components: { AppNav, AppHero, AppShowcase, AppSpecialCategory, AppProducts, DealOfTheDayApp, AppTestimonials, AppGameBlog }
+    
+    components: { AppNav, AppHero, AppShowcase, AppSpecialCategory, AppProducts, DealOfTheDayApp, AppTestimonials, AppGameBlog, AppSponsor, AppFooter }
 }
 
 </script>
@@ -30,6 +33,8 @@ export default {
     <DealOfTheDayApp></DealOfTheDayApp>
     <AppTestimonials></AppTestimonials>
     <AppGameBlog></AppGameBlog>
+    <AppSponsor></AppSponsor>
+    <AppFooter></AppFooter>
 </template>
 
 <style lang="scss"></style>
